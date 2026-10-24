@@ -15,7 +15,6 @@ An end-to-end analysis of Traveloka hotel listings for the New Year period. The 
 4. [Workflow](#workflow)
 5. [Data Cleaning & Validation (SQL)](#data-cleaning--validation-sql)
 6. [Statistical Analysis (Python)](#statistical-analysis-python)
-7. [Dashboard (Tableau)](#dashboard-tableau)
 8. [Key Insights](#key-insights)
 9. [Repository Structure](#repository-structure)
 10. [How to Reproduce](#how-to-reproduce)
@@ -118,12 +117,6 @@ Notebook: [`P1M2_raka_airlangga.ipynb`](P1M2_raka_airlangga.ipynb)
   - Result: statistic = 613.115, p-value = 3.54e-127 (< 0.05), so H0 is rejected.
   - Conclusion: Star rating has a significant effect on the nightly hotel rate during the New Year period.
 
-## Dashboard (Tableau)
-
-Interactive dashboard published on Tableau Public: **[Open dashboard](https://public.tableau.com/shared/Z5H9T7W2M?:display_count=n&:origin=viz_share_link)**
-
-It shows: [e.g. price by city, price by star rating, hotel locations on a map, discount levels]
-
 ## Key Insights
 
 1. **Hotel distribution is uneven.** Jakarta has the most hotels (66), followed by Bandung and Surabaya (55 each). Denpasar has only 1 hotel in the dataset, so its results should not be generalized.
@@ -180,4 +173,4 @@ pip install pandas numpy scipy matplotlib seaborn jupyter
 ## Author
 
 **Raka Airlangga**
-[LinkedIn](https://linkedin.com/in/your-profile) · [Email](mailto:your-email@example.com)
+[LinkedIn](www.linkedin.com/in/raka-airlangga) · [Email](raka.airlanggaa@gmail.com)

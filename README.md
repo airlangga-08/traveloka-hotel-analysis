@@ -45,7 +45,7 @@ An end-to-end analysis of Traveloka hotel listings for the New Year period. The 
 | Purpose | Tool |
 |---|---|
 | Data storage & cleaning | PostgreSQL, SQL |
-| Statistical analysis | Python (Jupyter Notebook) [add libraries: pandas, numpy, scipy, matplotlib, seaborn ...] |
+| Statistical analysis | Python (Jupyter Notebook), pandas, SciPy, Matplotlib / Seaborn |
 | Visualization | Tableau Public |
 
 ## Dataset

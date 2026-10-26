@@ -2,9 +2,9 @@
 
 An end-to-end analysis of Traveloka hotel listings for the New Year period. The project cleans raw data in **PostgreSQL**, runs statistical analysis in **Python**, and presents the results in an interactive **Tableau** dashboard.
 
-**[View the Tableau Dashboard]**
+[<img width="1920" height="1080" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/cfa82c89-ef4a-4ed6-9c43-7bdff9603013" />](https://public.tableau.com/app/profile/raka.airlangga/viz/Milestone_2_17854221078170/DashboardVisualisasi)
 
-<img width="1910" height="848" alt="Screenshot 2026-10-24 181054" src="https://github.com/user-attachments/assets/20d21574-1503-4e18-82e0-ae173366bd43" />
+**[View the Tableau Dashboard](https://public.tableau.com/app/profile/raka.airlangga/viz/Milestone_2_17854221078170/DashboardVisualisasi)**
 
 ---
 
@@ -117,12 +117,26 @@ Notebook: [`P1M2_raka_airlangga.ipynb`](P1M2_raka_airlangga.ipynb)
   - Result: statistic = 613.115, p-value = 3.54e-127 (< 0.05), so H0 is rejected.
   - Conclusion: Star rating has a significant effect on the nightly hotel rate during the New Year period.
 
+## Dashboard (Tableau)
+
+Interactive dashboard published on [Tableau Public](https://public.tableau.com/app/profile/raka.airlangga/viz/Milestone_2_17854221078170/DashboardVisualisasi).
+
+**Hotel Analysis Dashboard** combines six views that answer the project questions:
+- **Number of hotels by city:** shows how unevenly hotels are spread, with Jakarta having the most.
+- **Star rating composition:** most hotels are 3- and 4-star.
+- **Median nightly rate by city:** Yogyakarta is the highest (Rp 1.81 million), followed by Jakarta and Bandung.
+- **Geographic distribution:** a map of the cities in the dataset. Each circle is a city. Color shows the median nightly rate (blue = higher, around Rp 1 million and above; red = lower), and circle size shows the number of hotels in that city (larger = more hotels).
+- **Rate distribution:** a histogram showing that most hotels are in the low-to-mid range, with a long tail of very expensive hotels.
+- **Discount distribution:** most offers cluster around a 25% discount from the original rate.
+
+**Interactivity:** filter by city, star rating, and nightly rate range (Rp 58,274 to Rp 27,944,000). A "Lihat Statistik" button opens a second dashboard with the statistical analysis.
+
 ## Key Insights
 
 1. **Hotel distribution is uneven.** Jakarta has the most hotels (66), followed by Bandung and Surabaya (55 each). Denpasar has only 1 hotel in the dataset, so its results should not be generalized.
 2. **Mid-to-upper class dominates.** There are 135 four-star and 118 three-star hotels. 49 hotels have a star rating of 0, assumed to be properties without a star classification.
 3. **Yogyakarta has the highest median nightly rate** at Rp 1.81 million, followed by Jakarta and Bandung. The gap between cities is large: Banda Aceh's median is Rp 440k.
-4. **Geographic pattern:**
+4. **Rates follow a clear geographic pattern.** All five cities with a median nightly rate of Rp 1 million or more are in Java: Yogyakarta (Rp 1.81 million), Jakarta (Rp 1.63 million), Bandung (Rp 1.52 million), Semarang (Rp 1.10 million) and Bogor (Rp 1.02 million). All four Sumatra cities are below Rp 525k: Padang (Rp 522k), Banda Aceh (Rp 440k), Palembang (Rp 375k) and Medan (Rp 319k). Java is not uniformly expensive, though: Surabaya (Rp 795k) and Solo (Rp 700k) fall below Rp 1 million.
 5. **Rates are heavily right-skewed** (skewness 7.72, kurtosis 99.36) with clear outliers, so the median (Rp 972,604) is a better measure than the mean.
 6. **Star rating significantly affects the nightly rate.** The Kruskal-Wallis test rejects H0 (statistic = 613.115, p < 0.05).
 7. **Discounts are consistent.** The average discount is 24.43% and the median is 25%. A few hotels offer much deeper discounts, up to 70%.
@@ -132,6 +146,7 @@ Notebook: [`P1M2_raka_airlangga.ipynb`](P1M2_raka_airlangga.ipynb)
 - Cities with very few hotels (e.g. Denpasar, 1 hotel) are not representative; their median rates describe the sample, not the whole city.
 - Hotels with a star rating of 0 are treated as unclassified accommodations.
 - Outliers were kept in the data and handled by using the median instead of the mean.
+- The dataset covers 12 cities (mainly Java and Sumatra, plus Bali), so geographic patterns describe these cities only and should not be generalized to all of Indonesia.
 
 ## Recommendations
 
@@ -173,4 +188,4 @@ pip install pandas numpy scipy matplotlib seaborn jupyter
 ## Author
 
 **Raka Airlangga**
-[LinkedIn](www.linkedin.com/in/raka-airlangga) · [Email](raka.airlanggaa@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/raka-airlangga/) · [Email](mailto:raka.airlanggaa@gmail.com)
